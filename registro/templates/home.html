@@ -1,0 +1,58 @@
+{% extends "plantilla.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<div style="margin-bottom: 50px; margin-top: 50px" class="container">
+	<div class="row">
+        <input style="float:right; font-weight: bold; margin-bottom:10px; padding-top:3px; padding-bottom:3px;" type="submit" name="" value="+ Agregar">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Hora</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">DNI</th>
+                    <th scope="col">Tarea</th>
+                    <th scope="col">Despachante</th>
+                    <th scope="col">Cliente</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">12:30</th>
+                    <td>Andres</td>
+                    <td>Chau</td>
+                    <td>37754896</td>
+                    <td>Tarea</td>
+                    <td>Despachante</td>
+                    <td>Cliente</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                </tbody>
+        </table>
+	</div>
+</div>
+ 
+
+
+	
+{% endblock %}
+
+

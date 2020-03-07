@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contenedor %}
+   <header class="container-fluid">
+      <div class="row">
+         <h1>DOCUMENTACION</h1>
+         <a href="/admin" style="font-size:17px;color:rgb(216, 53, 53);float:right;padding-right:10px;padding-top:20px; font-weight: bolder; ">Salir</a>
+         <ul class="nav navbar-nav">
+            <li><a href="{% url 'home' %}" class="menu">HOME</a></li>
+            <li><a href="{% url 'home' %}" class="menu">CALENDARIO</a></li>
+         </ul>
+      </div>           
+   </header>
+   <div class="container">
+	   <div class="row">
+			
+		{% block content %}{% endblock %}
+			
+	   </div>
+   </div>
+
+
+{% endblock %}
